@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private let exchangeView = ExchangeRateView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
+        setConstraints()
 
+    }
+    func setUI() {
+        
+        
+    }
+    func setConstraints() {
+        
     }
     
 
