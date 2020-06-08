@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		704875D5248E2693009152F9 /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875D4248E2693009152F9 /* ExchangeRateView.swift */; };
 		704875D8248E2D61009152F9 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875D7248E2D61009152F9 /* UIFontExtension.swift */; };
 		704875DA248E3100009152F9 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875D9248E3100009152F9 /* CGFloatExtension.swift */; };
+		704875DC248E465B009152F9 /* RecipientCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875DB248E465B009152F9 /* RecipientCountry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		704875D4248E2693009152F9 /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
 		704875D7248E2D61009152F9 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		704875D9248E3100009152F9 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		704875DB248E465B009152F9 /* RecipientCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountry.swift; sourceTree = "<group>"; };
 		E659CE42016A21C02C969BA5 /* Pods-WireBarleyCodingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireBarleyCodingTest.debug.xcconfig"; path = "Target Support Files/Pods-WireBarleyCodingTest/Pods-WireBarleyCodingTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +64,6 @@
 				E659CE42016A21C02C969BA5 /* Pods-WireBarleyCodingTest.debug.xcconfig */,
 				459D3AEDFD15605DBEA6D604 /* Pods-WireBarleyCodingTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +121,7 @@
 		704875D3248E2090009152F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				704875DB248E465B009152F9 /* RecipientCountry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +254,7 @@
 				704875D8248E2D61009152F9 /* UIFontExtension.swift in Sources */,
 				704875BE248E1DAF009152F9 /* AppDelegate.swift in Sources */,
 				704875C0248E1DAF009152F9 /* SceneDelegate.swift in Sources */,
+				704875DC248E465B009152F9 /* RecipientCountry.swift in Sources */,
 				704875DA248E3100009152F9 /* CGFloatExtension.swift in Sources */,
 				704875D5248E2693009152F9 /* ExchangeRateView.swift in Sources */,
 			);
