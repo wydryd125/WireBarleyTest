@@ -12,18 +12,18 @@ extension CGFloat {
     
     static func dynamicWidth(width: CGFloat) -> CGFloat {
         let bounds = UIScreen.main.bounds
-        let width = bounds.width
+        let currentWidth = bounds.width
         let base: CGFloat = 375.0
-        let multiplier = width / base
+        let multiplier = currentWidth / base
         let result = (width * multiplier)
         return result.rounded()
     }
     
     static func dynamicHeight(height: CGFloat) -> CGFloat {
         let bounds = UIScreen.main.bounds
-        let height = bounds.size.height
+        let currentHeight = bounds.size.height
         let base: CGFloat = 812.0 // 11Pro, iphone X, XS => 5.8 inch
-        let multiplier = height / base
+        let multiplier = currentHeight / base
         let result = (height * multiplier)
         return result.rounded()
     }
