@@ -9,6 +9,10 @@
 import UIKit
 import SnapKit
 
+protocol ExchangeRateViewProtocol: UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+}
+
 class ExchangeRateView: UIView {
     
     private let exchangeLabel = UILabel()
@@ -33,6 +37,8 @@ class ExchangeRateView: UIView {
     
     private let selectResultLabel = UILabel()
     
+    private let countryPickerView = UIPickerView()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,6 +46,10 @@ class ExchangeRateView: UIView {
         setConstrainrts()
         
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        endEditing(true)
+    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -50,7 +60,7 @@ class ExchangeRateView: UIView {
         let textFont = UIFont.dynamicFont(fontSize: 16, weight: .regular)
         let resultFont = UIFont.dynamicFont(fontSize: 20, weight: .medium)
         
-        [exchangeLabel,sendMoneyCountryLabel,sendMoneyCountry,recipientCountryLabel,recipientCountry,exchangeRateLabel,exchangeRate,checkTimeLabel,checkTime,remittanceLabel,remittanceTextField,USDLabel,selectResultLabel].forEach {
+        [exchangeLabel, sendMoneyCountryLabel, sendMoneyCountry, recipientCountryLabel, recipientCountry, exchangeRateLabel, exchangeRate, checkTimeLabel, checkTime, remittanceLabel, remittanceTextField, USDLabel, selectResultLabel, countryPickerView].forEach {
             addSubview($0)
         }
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -86,6 +96,7 @@ class ExchangeRateView: UIView {
         remittanceLabel.font = textFont
         
         remittanceTextField.textAlignment = .right
+        remittanceTextField.keyboardType = .numberPad
         remittanceTextField.font = textFont
         remittanceTextField.layer.borderWidth = 0.48
         remittanceTextField.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
@@ -96,7 +107,7 @@ class ExchangeRateView: UIView {
         selectResultLabel.text = "수취금액은 호노로로로놀 입니다."
         selectResultLabel.font = resultFont
         
-        
+//        countryPickerView.backgroundColor = .red
         
     }
     private func setConstrainrts() {
@@ -172,10 +183,26 @@ class ExchangeRateView: UIView {
             
         }
         
+        countryPickerView.snp.makeConstraints {
+            $0.top.equalTo(snp.centerY).multipliedBy(1.5)
+            $0.bottom.equalToSuperview().inset(padding)
+            $0.leading.trailing.equalToSuperview()
+
+        }
+        
     }
     
-    func setRemittanceTextFieldDelegate(delegate: UITextFieldDelegate) {
+    
+    // MARK: Interface
+    func setExchangViewProtocol(delegate: ExchangeRateViewProtocol) {
         self.remittanceTextField.delegate = delegate
+        self.countryPickerView.dataSource = delegate
+        self.countryPickerView.delegate = delegate
     }
+    
+    func updateRecipientCountryLabel(recipientCountry: Recipient) {
+        self.recipientCountry.text = recipientCountry.switchExchange()
+    }
+    func updateCheckTime
     
 }
