@@ -15,7 +15,6 @@ extension UIFont {
         let bounds = UIScreen.main.bounds
         let height = bounds.size.height
         let base: CGFloat = 812.0 // 11Pro, iphone X, XS => 5.8 inch
-        
         let multiplier: CGFloat = height / base
         
         return systemFont(ofSize: size * multiplier, weight: weight)
