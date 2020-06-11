@@ -12,11 +12,11 @@
 
 ## How to use
 
-1. move directory
+1. move directory		
 
-  ```
-  $ cd WireBarleyCodingTest
-  ```
+   ```
+   $ cd WireBarleyCodingTest
+   ```
 
 2. CocoaPods install
 
