@@ -8,7 +8,22 @@
   	- Language: Swift
   	- Library: SnapKit
 
+## How to use
 
+1. CocoaPods install
+
+   ```
+   $ sudo gem install cocoapods
+   ```
+
+2. install Library
+
+   ```
+   $ pod install
+   $ open WireBarleyCodingTest.xcworkspace
+   ```
+
+   
 
 ## Implementation
 
