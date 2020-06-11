@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BCAC442F680AE598E28A4AA /* Pods_WireBarleyCodingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6F1315BB1BA16A33758FE7 /* Pods_WireBarleyCodingTest.framework */; };
 		704875BE248E1DAF009152F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875BD248E1DAF009152F9 /* AppDelegate.swift */; };
 		704875C0248E1DAF009152F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875BF248E1DAF009152F9 /* SceneDelegate.swift */; };
 		704875C2248E1DAF009152F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875C1248E1DAF009152F9 /* ViewController.swift */; };
 		704875C5248E1DAF009152F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704875C3248E1DAF009152F9 /* Main.storyboard */; };
 		704875C7248E1DB3009152F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704875C6248E1DB3009152F9 /* Assets.xcassets */; };
 		704875CA248E1DB3009152F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704875C8248E1DB3009152F9 /* LaunchScreen.storyboard */; };
+		704875D5248E2693009152F9 /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875D4248E2693009152F9 /* ExchangeRateView.swift */; };
+		704875D8248E2D61009152F9 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875D7248E2D61009152F9 /* UIFontExtension.swift */; };
+		704875DA248E3100009152F9 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875D9248E3100009152F9 /* CGFloatExtension.swift */; };
+		704875DC248E465B009152F9 /* RecipientCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704875DB248E465B009152F9 /* RecipientCountry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E6F1315BB1BA16A33758FE7 /* Pods_WireBarleyCodingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireBarleyCodingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459D3AEDFD15605DBEA6D604 /* Pods-WireBarleyCodingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireBarleyCodingTest.release.xcconfig"; path = "Target Support Files/Pods-WireBarleyCodingTest/Pods-WireBarleyCodingTest.release.xcconfig"; sourceTree = "<group>"; };
 		704875BA248E1DAF009152F9 /* WireBarleyCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireBarleyCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704875BD248E1DAF009152F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704875BF248E1DAF009152F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		704875C6248E1DB3009152F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		704875C9248E1DB3009152F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704875CB248E1DB3009152F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		704875D4248E2693009152F9 /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
+		704875D7248E2D61009152F9 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		704875D9248E3100009152F9 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		704875DB248E465B009152F9 /* RecipientCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountry.swift; sourceTree = "<group>"; };
+		E659CE42016A21C02C969BA5 /* Pods-WireBarleyCodingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireBarleyCodingTest.debug.xcconfig"; path = "Target Support Files/Pods-WireBarleyCodingTest/Pods-WireBarleyCodingTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCAC442F680AE598E28A4AA /* Pods_WireBarleyCodingTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14C53D3E3B88D4EE39155EA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E6F1315BB1BA16A33758FE7 /* Pods_WireBarleyCodingTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6138D412A81A47AA7D535F78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E659CE42016A21C02C969BA5 /* Pods-WireBarleyCodingTest.debug.xcconfig */,
+				459D3AEDFD15605DBEA6D604 /* Pods-WireBarleyCodingTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		704875B1248E1DAF009152F9 = {
 			isa = PBXGroup;
 			children = (
 				704875BC248E1DAF009152F9 /* WireBarleyCodingTest */,
 				704875BB248E1DAF009152F9 /* Products */,
+				6138D412A81A47AA7D535F78 /* Pods */,
+				14C53D3E3B88D4EE39155EA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,7 @@
 		704875BC248E1DAF009152F9 /* WireBarleyCodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				704875D6248E2D1E009152F9 /* Extension */,
 				704875D3248E2090009152F9 /* Model */,
 				704875D2248E2085009152F9 /* View */,
 				704875D1248E2081009152F9 /* Controller */,
@@ -80,6 +113,7 @@
 		704875D2248E2085009152F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				704875D4248E2693009152F9 /* ExchangeRateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,8 +121,18 @@
 		704875D3248E2090009152F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				704875DB248E465B009152F9 /* RecipientCountry.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		704875D6248E2D1E009152F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				704875D7248E2D61009152F9 /* UIFontExtension.swift */,
+				704875D9248E3100009152F9 /* CGFloatExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 704875CE248E1DB3009152F9 /* Build configuration list for PBXNativeTarget "WireBarleyCodingTest" */;
 			buildPhases = (
+				FF235A9F74ABC1D7A95C5561 /* [CP] Check Pods Manifest.lock */,
 				704875B6248E1DAF009152F9 /* Sources */,
 				704875B7248E1DAF009152F9 /* Frameworks */,
 				704875B8248E1DAF009152F9 /* Resources */,
+				961B62C7C2E0EBB753126A6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,14 +203,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		961B62C7C2E0EBB753126A6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireBarleyCodingTest/Pods-WireBarleyCodingTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WireBarleyCodingTest/Pods-WireBarleyCodingTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WireBarleyCodingTest/Pods-WireBarleyCodingTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF235A9F74ABC1D7A95C5561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireBarleyCodingTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		704875B6248E1DAF009152F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				704875C2248E1DAF009152F9 /* ViewController.swift in Sources */,
+				704875D8248E2D61009152F9 /* UIFontExtension.swift in Sources */,
 				704875BE248E1DAF009152F9 /* AppDelegate.swift in Sources */,
 				704875C0248E1DAF009152F9 /* SceneDelegate.swift in Sources */,
+				704875DC248E465B009152F9 /* RecipientCountry.swift in Sources */,
+				704875DA248E3100009152F9 /* CGFloatExtension.swift in Sources */,
+				704875D5248E2693009152F9 /* ExchangeRateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +398,13 @@
 		};
 		704875CF248E1DB3009152F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E659CE42016A21C02C969BA5 /* Pods-WireBarleyCodingTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H9Q3M8H26;
 				INFOPLIST_FILE = WireBarleyCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,11 +418,13 @@
 		};
 		704875D0248E1DB3009152F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459D3AEDFD15605DBEA6D604 /* Pods-WireBarleyCodingTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H9Q3M8H26;
 				INFOPLIST_FILE = WireBarleyCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
