@@ -57,9 +57,9 @@ class ExchangeRateView: UIView {
     //MARK: UI
     private func setUI() {
         let mainFont = UIFont.dynamicFont(fontSize: 48, weight: .medium)
-        let textFont = UIFont.dynamicFont(fontSize: 16, weight: .regular)
-        let resultFont = UIFont.dynamicFont(fontSize: 20, weight: .medium)
-        
+        let textFont = UIFont.dynamicFont(fontSize: 18, weight: .regular)
+        let resultFont = UIFont.dynamicFont(fontSize: 24, weight: .medium)
+
         [exchangeLabel, sendMoneyCountryLabel, sendMoneyCountry, recipientCountryLabel, recipientCountry, exchangeRateLabel, exchangeRate, checkTimeLabel, checkTime, remittanceLabel, remittanceTextField, USDLabel, selectResultLabel, countryPickerView].forEach {
             addSubview($0)
         }
@@ -83,17 +83,18 @@ class ExchangeRateView: UIView {
         exchangeRateLabel.text = "환율 : "
         exchangeRateLabel.font = textFont
         
-        exchangeRate.text = "1,130,05 KRW / USD"
+        exchangeRate.text = ""
         exchangeRate.font = textFont
         
         checkTimeLabel.text = "조회시간 : "
         checkTimeLabel.font = textFont
         
-        checkTime.text = "2020-06-08 16:13"
+        checkTime.text = ""
         checkTime.font = textFont
         
         remittanceLabel.text = "송금액 : "
         remittanceLabel.font = textFont
+        
         
         remittanceTextField.textAlignment = .right
         remittanceTextField.keyboardType = .numberPad
@@ -104,8 +105,10 @@ class ExchangeRateView: UIView {
         USDLabel.text = "USD"
         USDLabel.font = textFont
         
-        selectResultLabel.text = "수취금액은 호노로로로놀 입니다."
+        selectResultLabel.text = ""
         selectResultLabel.font = resultFont
+        selectResultLabel.textAlignment = .center
+        selectResultLabel.numberOfLines = 0
         
 //        countryPickerView.backgroundColor = .red
         
@@ -179,7 +182,7 @@ class ExchangeRateView: UIView {
         
         selectResultLabel.snp.makeConstraints {
             $0.top.equalTo(remittanceLabel.snp.bottom).offset(topMargin * 2)
-            $0.centerX.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
             
         }
         
@@ -200,9 +203,18 @@ class ExchangeRateView: UIView {
         self.countryPickerView.delegate = delegate
     }
     
-    func updateRecipientCountryLabel(recipientCountry: Recipient) {
-        self.recipientCountry.text = recipientCountry.switchExchange()
+    func updateRecipientCountryLabel(recipientCountry: String) {
+        self.recipientCountry.text = recipientCountry
+
+        
     }
-    func updateCheckTime
     
+    
+    func updateResult(exchange: String, money: String, country: String, checkTime: String) {
+        let selectResult = money != "0.00" ? "수취금액은 \(money) (\(country)) 입니다." : ""
+        selectResultLabel.text = selectResult
+        exchangeRate.text = exchange + " " + country + " / USD"
+        self.checkTime.text = checkTime
+        
+    }
 }
