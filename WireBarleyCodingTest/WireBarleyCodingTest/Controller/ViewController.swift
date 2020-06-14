@@ -67,7 +67,7 @@ extension ViewController: ExchangeRateViewProtocol {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return model.recipientCountriyString(row: row)
+        return model.recipientCountryString(row: row)
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
@@ -75,7 +75,7 @@ extension ViewController: ExchangeRateViewProtocol {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let recipientCountry = model.recipientCountriyString(row: row)
+        let recipientCountry = model.recipientCountryString(row: row)
         exchangeView.updateRecipientCountryLabel(recipientCountry: recipientCountry)
         
         model.request(completionHandler: {
