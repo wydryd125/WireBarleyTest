@@ -42,7 +42,7 @@ struct Model {
         self.sendMoney = sendMoney
     }
     
-    mutating func recipientCountriyString(row: Int) -> String {
+    mutating func recipientCountryString(row: Int) -> String {
         recipientCountry = recipientCountries[row]
         return recipientCountries[row].switchExchange()
     }
